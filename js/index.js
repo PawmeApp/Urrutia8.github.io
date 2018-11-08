@@ -31,7 +31,7 @@ function init() {
     container.addChild(heart);
   }
 
-  var text = new createjs.Text("Feliz aniversario mi amor. Te amo", "bold 24px Arial", "#312");
+  var text = new createjs.Text("Feliz aniversario mi amor \n Te amo", "bold 60px Verdana", "#312");
   text.textAlign = "center";
   text.x = w / 2;
   text.y = h / 2 - text.getMeasuredLineHeight();
