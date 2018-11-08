@@ -37,7 +37,7 @@ function init() {
   text.y = h / 2 - text.getMeasuredLineHeight();
   stage.addChild(text);
 
-  for (i = 0; i < 100; i++) {
+  for (i = 0; i < 220; i++) {
     var captureContainer = new createjs.Container();
     captureContainer.cache(0, 0, w, h);
     captureContainers.push(captureContainer);
@@ -68,7 +68,7 @@ function tick(event) {
       heart.perX = (1 + Math.random() * 2) * h;
       heart.offX = Math.random() * h;
       heart.ampX = heart.perX * 0.1 * (0.15 + Math.random());
-      heart.velY = -Math.random() * 2 - 1;
+      heart.velY = -Math.random() * 12 - 1;
       heart.scaleX = heart.scaleY = Math.random() * 2 + 1;
       heart._rotation = Math.random() * 40 - 20;
       heart.alpha = Math.random() * 0.75 + 0.05;
